@@ -10,6 +10,10 @@ get '/' do
 end
 
 get '/new' do
+   erb :user_form
+end
+
+get '/remove' do
    erb :user_delete 
 end
 
@@ -30,4 +34,3 @@ post '/delete' do
        "user #{params[:name]} not found"
    end
 end
-
